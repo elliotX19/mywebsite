@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Simple Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Simple Website</h1>
-    </header>
+<header>
+    <h1>Welcome to My Simple Website</h1>
+</header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a little section about me. I like coding and learning new things!</p>
-        </section>
+<div class="section">
+    <h2>About Me</h2>
+    <p>This is a little section about me. I like coding and learning new things!</p>
+</div>
 
-        <section>
-            <h2>My Projects</h2>
-            <p>Click the button below to see my project details!</p>
-            <button onclick="showProjectDetails()">Show Project Details</button>
+<div class="section">
+    <h2>My Projects</h2>
+    <p>Click the button below to see my project details!</p>
+    <a href="#" id="show-details-btn" class="button">Show Project Details</a>
+</div>
 
-            <div id="projectDetails" style="display: none;">
-                <p>Here are the details of my project. It’s a cool web app!</p>
-            </div>
-        </section>
-    </main>
+<div class="section" id="project-details">
+    <p>Here are the details of my project. It’s a cool web app!</p>
+</div>
 
-    <footer>
-        <p>Created by Me | &copy; 2025</p>
-    </footer>
+<footer class="footer">
+    <p>Created by Me | © 2025</p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="scripts.js"></script> <!-- Link to the external JavaScript file -->
 </body>
 </html>
