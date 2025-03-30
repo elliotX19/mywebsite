@@ -7,15 +7,18 @@
 
 /* Basic page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #e0f7fa;
+    /* Light cyan background */
+    color: #37474f;
+    /* Dark gray text */
     line-height: 1.6;
     padding: 20px;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #009688;
+    /* Teal background */
     color: white;
     padding: 20px;
     text-align: center;
@@ -30,15 +33,18 @@ main {
 }
 
 section {
-    background-color: #fff;
+    background-color: #ffffff;
+    /* White background */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    /* Softer shadow */
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #FF7043;
+    /* Coral button color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -49,11 +55,14 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #FF5722;
+    /* Darker coral on hover */
 }
 
 footer {
     text-align: center;
     margin-top: 30px;
     font-size: 0.9em;
+    color: #263238;
+    /* Darker footer text */
 }
