@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(84, 216, 106);
+    background-color: rgb(127, 238, 241);
     color: rgb(71, 179, 212);  /* Change all text color to red */
 }
 
@@ -11,11 +11,11 @@ header, main, footer {
 
 header h1 {
     font-size: 2.5rem;
-    color: red;  /* Red color for header */
+    color: rgb(50, 9, 70);  /* Red color for header */
 }
 
 main h2 {
-    color: red;  /* Red color for subheadings */
+    color: rgb(50, 9, 70);  /* Red color for subheadings */
 }
 
 button {
