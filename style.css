@@ -1,8 +1,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(63, 125, 240);
-    color: red;  /* Change all text color to red */
+    background-color: rgb(255, 255, 255);
+    color: rgb(71, 179, 212);  /* Change all text color to red */
 }
 
 header, main, footer {
