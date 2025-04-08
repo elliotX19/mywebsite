@@ -1,10 +1,8 @@
 function showProjectDetails() {
-    var details = document.getElementById("projectDetails");
-
-    // Toggle the display of the project details
-    if (details.style.display === "none") {
-        details.style.display = "block";
+    const projectDetails = document.getElementById('projectDetails');
+    if (projectDetails.style.display === "none") {
+        projectDetails.style.display = "block";  // Show the details
     } else {
-        details.style.display = "none";
+        projectDetails.style.display = "none";  // Hide the details
     }
 }
