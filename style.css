@@ -1,15 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  h1 {
-    font-size: 2em;
-  }
-  
-  #gameCanvas {
-    border: 1px solid black;
-    background-color: #f0f0f0;
-  }
-  
+  margin: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+canvas {
+  background: #222;
+  display: block;
+  border: 4px solid #fff;
+}
