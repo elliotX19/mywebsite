@@ -64,14 +64,23 @@ function update() {
   }
 
   // Ball collision with paddles
-  let player = (ball.x < canvas.width / 2) ? user : ai;
-  if (collision(ball, player)) {
-    let collidePoint = ball.y - (player.y + player.height / 2);
-    collidePoint = collidePoint / (player.height / 2);
+  if (collision(ball, user)) {
+    let collidePoint = ball.y - (user.y + user.height / 2);
+    collidePoint = collidePoint / (user.height / 2);
     let angleRad = collidePoint * (Math.PI / 4);
-    let direction = (ball.x < canvas.width / 2) ? 1 : -1;
-    ball.velocityX = direction * ball.speed * Math.cos(angleRad);
+    ball.velocityX = ball.speed * Math.cos(angleRad);
     ball.velocityY = ball.speed * Math.sin(angleRad);
+    ball.x = user.x + user.width + ball.radius; // Push ball out to prevent sticking
+    ball.speed += 0.5;
+  }
+
+  else if (collision(ball, ai)) {
+    let collidePoint = ball.y - (ai.y + ai.height / 2);
+    collidePoint = collidePoint / (ai.height / 2);
+    let angleRad = collidePoint * (Math.PI / 4);
+    ball.velocityX = -ball.speed * Math.cos(angleRad);
+    ball.velocityY = ball.speed * Math.sin(angleRad);
+    ball.x = ai.x - ball.radius; // Push ball out to prevent sticking
     ball.speed += 0.5;
   }
 
