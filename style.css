@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(78, 3, 41);
+}
+
+.aboutmeParagraph {
+    text-align: center;
+    color: blue;
+}
+
+.projectDescription {
+    color: rgb(255, 174, 0);
+}
+
+.subName {
+    text-align: center;
+    color: rgb(255, 146, 3);
+
+}
+
+.name {
+    text-align: center;
+    color: blueviolet;
+}
+
+.aboutme {
+    text-align: center;
+    color: rgb(22, 255, 197);
+}
+
+.titleProjects {
+    text-align: center;
+    color: rgb(22, 255, 197);
+    ;
+}
+
+.Projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Project {
+    width: 250px;
+    text-align: center;
+    border: 1px solid #9b94f5;
+    border-radius: 10px;
+}
+
+.Project:hover {
+    transform: scale(1.05);
+}
+
+.Project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 600px) {
+    .Projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.Contacts {
+    text-align: center;
+    color: rgb(22, 255, 197);
+}
+
+.contactsLinks:hover {
+    color: aqua;
+}
+
+.githubLinks:hover {
+    color: aqua;
+}
