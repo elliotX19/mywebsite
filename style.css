@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(0, 167, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 .aboutmeParagraph {
     text-align: center;
-    color: blue;
+    color: rgb(0, 0, 0);
 }
 
 .projectDescription {
@@ -13,7 +13,7 @@ body {
 
 .subName {
     text-align: center;
-    color: rgb(255, 146, 3);
+    color: rgb(61, 49, 34);
 
 }
 
